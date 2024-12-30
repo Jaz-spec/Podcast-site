@@ -1,0 +1,153 @@
+:root {
+	--primary-color: #e8d22f;
+	--secondary-color: #000000;
+	--tirtiary-color: #c7c5c8;
+}
+
+body {
+	background-color: var(--secondary-color);
+	font-family: "Oswald", sans-serif;
+	color: var(--tirtiary-color);
+}
+
+.container {
+	width: 90%;
+	margin: 2vh auto;
+}
+
+h2 {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	font-size: 18px;
+	padding: 5px;
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin: 0 auto 3vh auto;
+	max-width: 100%;
+}
+
+h3 {
+	text-align: center;
+}
+
+p {
+	opacity: 0.7;
+}
+
+.side-panel {
+	min-width: 35%;
+}
+
+.episode-container {
+	border-top: solid 3px var(--primary-color);
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+.episode-main {
+	display: flex;
+}
+
+.logo {
+	max-width: 70px;
+	max-height: 70px;
+	margin: 10px;
+}
+
+.episode-container a {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	text-decoration: none;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	padding: 5px 20px;
+	max-width: 130px;
+	border: solid 2px var(--primary-color);
+	transition: all 250ms ease-in-out;
+}
+
+.episode-container a:hover {
+	color: var(--primary-color);
+	background-color: transparent;
+}
+
+main {
+	padding-top: 20px;
+	border-top: solid 3px var(--primary-color);
+}
+
+h4 {
+	text-align: center;
+	padding-top: 10px;
+}
+
+.reveiw {
+	color: var(--primary-color);
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 25px;
+}
+
+small {
+	font-size: medium;
+	opacity: 0.8;
+}
+
+footer {
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	padding: 20px;
+}
+
+.git-link {
+	color: var(--secondary-color);
+}
+
+@media (min-width: 1300px) {
+	.container {
+		max-width: 70%;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.row-container {
+		flex: 4;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	header {
+		max-width: 800px;
+		flex: 4;
+	}
+	aside {
+		margin-left: 1vh;
+		flex: 1;
+	}
+	.about-container {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.about-paragraph {
+		flex: 1;
+	}
+
+	.about-image {
+		flex: 1;
+		max-width: 60%;
+		margin-left: 1vh;
+	}
+
+	.reveiw-container {
+		display: flex;
+	}
+
+	.reveiw {
+		flex: 1;
+	}
+}
